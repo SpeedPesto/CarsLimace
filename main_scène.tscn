@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://cnfsxjf1dq5w2"]
+[gd_scene load_steps=7 format=3 uid="uid://cnfsxjf1dq5w2"]
 
 [ext_resource type="Script" uid="uid://j0qytjw3i3ii" path="res://SceneController.gd" id="1_ih3bs"]
 [ext_resource type="Script" uid="uid://xm1eqbq4uph4" path="res://playerController.gd" id="1_lg8bg"]
 [ext_resource type="PackedScene" uid="uid://cw3tgquxcl56k" path="res://snake.tscn" id="2_7bx85"]
 [ext_resource type="Texture2D" uid="uid://srbo1wrlm56o" path="res://Texture/Texture_Player.png" id="2_lg8bg"]
+[ext_resource type="Texture2D" uid="uid://brba4tesly585" path="res://Texture/Ombre.png" id="5_7frwj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ih3bs"]
 size = Vector2(10, 21)
@@ -26,3 +27,8 @@ texture = ExtResource("2_lg8bg")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
 position = Vector2(0, 0.5)
 shape = SubResource("RectangleShape2D_ih3bs")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Player"]
+position = Vector2(0, 1.88)
+scale = Vector2(0.615, 0.79)
+texture = ExtResource("5_7frwj")
