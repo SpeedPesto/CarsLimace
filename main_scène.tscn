@@ -1,3 +1,28 @@
-[gd_scene format=3 uid="uid://cnfsxjf1dq5w2"]
+[gd_scene load_steps=6 format=3 uid="uid://cnfsxjf1dq5w2"]
+
+[ext_resource type="Script" uid="uid://j0qytjw3i3ii" path="res://SceneController.gd" id="1_ih3bs"]
+[ext_resource type="Script" uid="uid://xm1eqbq4uph4" path="res://playerController.gd" id="1_lg8bg"]
+[ext_resource type="PackedScene" uid="uid://4r7qel5vhegt" path="res://snake.tscn" id="2_7bx85"]
+[ext_resource type="Texture2D" uid="uid://srbo1wrlm56o" path="res://Texture/Texture_Player.png" id="2_lg8bg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ih3bs"]
+size = Vector2(10, 21)
 
 [node name="MainScène" type="Node2D"]
+script = ExtResource("1_ih3bs")
+snake = ExtResource("2_7bx85")
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(219, 190)
+scale = Vector2(4, 4)
+script = ExtResource("1_lg8bg")
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Player"]
+z_index = 1
+position = Vector2(-6.67572e-06, 0)
+texture = ExtResource("2_lg8bg")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_ih3bs")

@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://4r7qel5vhegt"]
+
+[ext_resource type="Texture2D" uid="uid://sxb0sd1nl7j1" path="res://image.webp" id="1_baghe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gxkgb"]
+size = Vector2(62, 62)
+
+[node name="Snake" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_baghe")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gxkgb")
+disabled = true
