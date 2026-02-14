@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://SceneController.gd" id="1_ih3bs"]
 [ext_resource type="Script" path="res://playerController.gd" id="1_lg8bg"]
-[ext_resource type="PackedScene" path="res://snake.tscn" id="2_7bx85"]
+[ext_resource type="PackedScene" uid="uid://4r7qel5vhegt" path="res://snake.tscn" id="2_7bx85"]
 [ext_resource type="Texture2D" uid="uid://srbo1wrlm56o" path="res://Texture/Texture_Player.png" id="2_lg8bg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ih3bs"]
