@@ -15,8 +15,8 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Célejeudegoatà2commedesamoureux"
-run/main_scene="uid://dqko3ocmtrmwv"
-config/features=PackedStringArray("4.6", "Forward Plus")
+run/main_scene="uid://cnfsxjf1dq5w2"
+config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]

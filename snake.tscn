@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-[gd_scene load_steps=4 format=3 uid="uid://4r7qel5vhegt"]
-=======
-[gd_scene format=3 uid="uid://4r7qel5vhegt"]
->>>>>>> 8ad6eab5c6836f12c16ba924270aca4a403acedc
+[gd_scene load_steps=4 format=3 uid="uid://cw3tgquxcl56k"]
 
 [ext_resource type="Texture2D" uid="uid://bpjm7h2hvkll" path="res://Texture/Texture_Escagot.png" id="1_baghe"]
 [ext_resource type="Script" uid="uid://btxb7e2ax1c5f" path="res://ClassicEnemyController.gd" id="1_gxkgb"]
