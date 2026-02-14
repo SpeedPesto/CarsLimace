@@ -1,12 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://4r7qel5vhegt"]
+[gd_scene load_steps=4 format=3 uid="uid://4r7qel5vhegt"]
 
 [ext_resource type="Texture2D" uid="uid://bpjm7h2hvkll" path="res://Texture/Texture_Escagot.png" id="1_baghe"]
+[ext_resource type="Script" uid="uid://btxb7e2ax1c5f" path="res://ClassicEnemyController.gd" id="1_gxkgb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_gxkgb"]
 size = Vector2(26, 23)
 
 [node name="Snake" type="CharacterBody2D"]
 scale = Vector2(2, 2)
+script = ExtResource("1_gxkgb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_baghe")
